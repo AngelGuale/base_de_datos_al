@@ -1,0 +1,184 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb, graphicx, multicol, array}
+\usepackage{enumerate}
+
+\RequirePackage{algebraLineal}
+\RequirePackage{mitarea} 
+
+%\newcommand{\N}{\mathbb{N}}
+%\newcommand{\Z}{\mathbb{Z}}
+
+ 
+%\newenvironment{problem}[2][Problema]{\begin{trivlist}
+%\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+
+%\usepackage{graphicx}
+
+
+
+
+\begin{document}
+
+
+\title{\includegraphics[scale=0.07]{logo_espol_3}\\Problemas resueltos en clase \\Independencia Lineal}
+\author{Ángel Guale\\
+Álgebra Lineal Par. 3-5\\
+}
+\date{Semana del 22 al 25 de Mayo}
+\maketitle
+
+\problem{}
+Determine el valor de $k$ para que el conjunto S sea linealmente dependiente, donde $$S=\left\{\matrdxd{-1&2}{1&2}, \matrdxd{3&-1}{-2&0}, \matrdxd{-2&0}{3&1},\matrdxd{2k&1}{-3&k}\right\}$$
+
+\problem{}
+Demuestre:
+\\Sea $S=\conjvect{v}{n}$ un subconjunto linealmente independiente de vectores del espacio vectorial $V$ y sea $x$ un vector de $V$ que no puede ser expresado como una combinaci\'on lineal de los vectores de S, entonces $\llav{\kvect{v}{n}, x}$
+tambi\'en es linealmente independiente.
+
+\problem{}
+Sea $p(x)= x^2+2x-3$, $q(x)=2x^2-3x+4$, y $r(x)=ax^2-1$. El conjunto $\{p, q, r\}$ es
+linealmente dependiente si $a=\_?\_$.
+
+\problem{}
+Sean $f1(x) = sen x$, $f2(x) = cos(x+\pi/6)$, and $f3(x) = sen(x-\pi/4)$ para $0 \leq x \leq 2\pi$. Muestre que 
+$\{f1, f2, f3\}$ es linealmente dependiente.
+
+
+\problem{}
+Sean $a, b, c$ números reales distintos. Pruebe que los vectores $(1, 1, 1), (a, b, c), (a^2, b^2, c^2)$ forman un conjunto linealmente independiente en \rtres.
+
+\problem{}
+Califique las siguientes proposiciones como verdaderas o falsas, justifique su repuesta.\\
+
+\begin{enumerate}[a.]
+\item Si $V$ es un espacio vectorial con operaciones cualesquiera, entonces: $(v')' = v$ para todo vector perteneciente a $V$. ($v'$ = inverso aditivo de $v$)
+
+\item Sean $W$ y $H$ dos subespacios vectoriales de un espacio vectorial $V$. Si $dim  W = dim H$, entonces $W = H$.
+
+\item Si $A$ es una matriz de tamaño $3\times 5$, entonces $dim Nu(A)\geq 2$.
+\end{enumerate}
+
+\problem{}
+Sea la matriz $A$
+
+\[A=\begin{pmatrix}
+
+1 & 1 & 2 & 4 \\
+3 & c & 2 & 8 \\
+0 & 0 & 2 & 2 \\
+
+\end{pmatrix}\]
+Halle los posibles valores de $c$ para que: $dim Im (A)$ sea: 1, 2, 3 y 4. Justifique cada una de sus respuestas.
+
+\problem{}
+Sea $V=$ \rtres. Sean los conjuntos
+\[W=\lbrace(x,y,z)\in \rtres /(x,y,z) = (0,0,1) + (0,1,2)\:t;\,t \in \mathbb{R}\rbrace\]
+\[U=\lbrace(u \in \rdos)/ u = f(w);\,w \in W \rbrace\]\\
+Y sea la función $f$
+\[f:\rtres \rightarrow \rdos\]
+\[f(x,y,z) = (4x-2y,y+z)\]\\
+Determine:\\
+\begin{enumerate}[a.]
+\item Si $f$ es una transformación lineal
+\item La representación gráfica de $W$
+\item La representación gráfica de $U$
+\end{enumerate}
+
+\problem{}
+Sea $V = \pdos$. Sea el subconjunto $H$ definido como
+\[H = \lbrace p(x) \in  \pdos/ p'(0) + p''(0) = 0\rbrace\]
+Determine si $H$ es un subespacio vectorial, si lo es halle una base y dimensión de $H$.
+
+\problem{}
+Considere el espacio vectorial real $V = \puno$ con las operaciones 
+\[(\auno + b_1 x)\oplus (a_2 + b_2 x) = (a_1 + a_2 + 4) + (b_1 + b_2 - 9)x\]
+\[\forall \alpha \in \mathbb{R}\qquad \alpha\odot(a + bx) = (\alpha a - 4 + 4\alpha) + (\alpha b + 9 - 9\alpha)x\]\
+\begin{enumerate}[a.]
+\item Encuentre el vector nulo $n_V$ de $V$ y el vector inverso aditivo del vector $u = 2 + 3x$
+\item ¿Los vectores $u = 2 + 3x$ y $v = 4 + 6x$ constituyen una base para $V = \puno$? Justifique su respuesta
+\end{enumerate}
+
+\problem{}
+Sea la matriz
+
+\[ A = \left( \begin{array}{cccc}
+1 & - 2 & 3 & - 1 \\
+- 3 & 5 & 2 & 6 \\
+1 & - 3 & 14 & 2 \end{array} \right)\] 
+\begin{enumerate}[a.]
+\item Encuentre una base y determine la dimensión de la Imagen de $A$.
+\item Usando la base del literal anterior, complete una base para el espacio \rtres.
+\item Encuentre una base y determine la dimensión del Núcleo de $A$.
+
+\end{enumerate}
+
+\problem{}
+Sean $B_1 = \{-5 + 9x$, $6-6x+5x^2$, $2-7x-4x^2\}$ y $B_2 = \{u_1,u_2,u_3\}$ bases del espacio vectorial $V = \pdos$. Sea la matriz de transición de la base $B_1$ a la base $B_2$
+\[C=\begin{pmatrix}
+
+0 & 1 & -1 \\
+2 & -2 & -1  \\
+-1 & 1 & 1  \\
+
+\end{pmatrix}\]
+\begin{enumerate}[a.]
+\item Encuentre los vectores de la base $B_2$
+\item Encuentre la matriz de cambio de base de $B_2$ a $B_1$
+\item Sea $v \in \pdos $ tal que $[v]_{B_2} = (3,-1,2)$. Encuentre $v$ y $[v]_{B_1}$
+
+\end{enumerate}
+
+\problem{}
+Sea el espacio vectorial $V = \mdosxdos$. Sean los subespacios de $V$
+\[H = \left\{\matrdxd{a & b}{c & d}\in \mdosxdos/ c=b-a,\,d=a+2b-c\right\}\]
+\[W=gen\left\{\matrdxd{1 & 1}{-1 & 3},\matrdxd{2 & 0}{-1 & 4}\right\}\]
+\begin{enumerate}[a.]
+\item Encuentre una base y determine la dimensión del subespacio $H + W$
+\item ¿Es directa la suma $H + W$? Justifique su respuesta
+\item ¿Es $H \cup W$ un subespacio de $V$? Justifique su respuesta
+
+\end{enumerate}
+
+\problem{}
+Sea $V = C^1 (I)$ el espacio vectorial de las funciones continuas en un intervalo $I$ tal que tienen derivadas que son también continuas en dicho intervalo. Sean $f,g \in V$. Se define el Wronskiano de $f$ y $g$ para toda $x \in I$ como
+\[W(f,g)(x)=\begin{vmatrix}
+
+f(x) & g(x)\\
+f'(x) & g'(x)\\
+
+\end{vmatrix}\]
+\begin{enumerate}[a.]
+\item Demuestre que si $f$ y $g$ son linealmente dependientes en $I$ entonces el Wronskiano de $f$ y $g$ se anula en todo punto del intervalo $I$.
+\item Suponga que $f(x) = x^2$ y que $g(x) = x|x|$. Calcule el Wronskiano de estas funciones.
+\item ¿Son $f$ y $g$ linealmente dependientes o linealmente independientes en $I = (-1,1)$?¿Qué ocurre si $I = (0,1)$? Justifique sus respuestas.
+
+ 
+\end{enumerate}
+
+\problem{}
+Defina “Transformación lineal” y demuestre que la función $T : \puno \rightarrow \rtres$ con regla de correspondencia 
+\[T(a + bx) = \begin{pmatrix}
+5a + b\\
+b - 3a\\
+2b\\
+\end{pmatrix}\]
+Es una transformación lineal de \puno en \rtres.
+
+\problem{}
+Sea $V = C^1 (\mathbb{R})$ el espacio vectorial de todas las funciones continuas en el conjunto de los reales $\mathbb{R}$, que poseen la primera derivada que es también continua en $\mathbb{R}$. Se definen los subconjuntos de $V$:
+\[W = \{y(x) \in V / y'(x) + 2y(x) = 0\}\]
+\[H = \{y(x) \in V / y'(x) + 2y(x) = x\}\]
+\begin{enumerate}[a.]
+\item Determine si $W$ y $H$ son subespacios de $V$.
+\item Suponga que $\phi_1$, $\phi_2 \in H$ ¿Se puede afirmar que $\phi_1 - \phi_2 \in W$? 
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
