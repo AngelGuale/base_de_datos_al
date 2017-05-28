@@ -218,3 +218,9 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+build/problemas.log
+*.log
+*.pdf
+*.gz
+*.pdf
+build/problemas.pdf
