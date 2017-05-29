@@ -224,3 +224,7 @@ build/problemas.log
 *.gz
 *.pdf
 build/problemas.pdf
+*.gz
+*.log
+*.pdf
+build/*
